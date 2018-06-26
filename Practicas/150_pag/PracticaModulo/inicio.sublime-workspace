@@ -1,0 +1,187 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"MA",
+				"maximo"
+			],
+			[
+				"MI",
+				"minimo"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Programación/Python/Practicas/PracticaModulo/Principal/inicio.py",
+		"/D/Programación/Python/Practicas/19_Modulo_1_APS.py",
+		"/D/Programación/Python/Practicas/20_Modulo_2/entrada/__init__.py",
+		"/D/Programación/Python/Practicas/20_Modulo_2/lanzador.py",
+		"/D/Programación/Python/Practicas/20_Modulo_2/entrada/numero.py",
+		"/D/Programación/Python/Practicas/20_Modulo_2/entrada/booleano.py",
+		"/D/Programación/Python/Practicas/20_Modulo_2/juego.py",
+		"/D/Programación/Python/Practicas/practica.py",
+		"/D/Programación/Python/Practicas/excepciones_APS.py",
+		"/D/Programación/Python/Libro eni de Python 3/Código/Guia/11_JUEGO_guess_the_number.py",
+		"/D/Programación/Python/Practicas/13_Funciones_genericas_1_APS.py",
+		"/D/Programación/Python/Practicas/10_Bloque_Iterativo_infinito_APS.py",
+		"/D/Programación/Python/Practicas/09_Bloque_Iterativo_APS.py",
+		"/D/Programación/Python/Practicas/08_Condiciones_avanzadas_APS.py",
+		"/D/Programación/Python/pruebaFunciones1.py"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "inicio.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
