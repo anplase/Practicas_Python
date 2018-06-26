@@ -18,7 +18,7 @@ print()
 print('Diccionario con cambio del elmento 2 por False')
 mi_diccionario[2]=False
 print(mi_diccionario)
-print()
+print() #hola
 
 valor=mi_diccionario.get('z',12) #donde regreso un numero, string u otra cosa
 print(valor)
