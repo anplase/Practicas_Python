@@ -1,0 +1,94 @@
+se crea una carpeta en el disco duro donde se va a trabajar y en la consola desde ese directorio se escribe git init, esto lo que hace es crear un directorio .git para empezar a trabajar con los commit. Está oculto por cierto.
+
+para incluir los archivos en los commit hay que poner git add y el nombre del archivo, si se pone git add .   lo que hace es poner todos los archivos en los commit, Normalmente se suele poner el  git add LICENSE README.md que son los dos ficheros que deben de estar siempre. y de esta forma como está escrito. git add lo que suele hacer es registrar en el indice lo ficheros nuevos o modificados.
+
+git reset lo que hace es lo contrario a git add, que es quitarlo del indice.
+
+git commit lo que hace es generar un nuevo commit con lo registrado en el indice.
+git commit -m "descripcion"     descripcion del commit.
+
+De esta forma sigue un flujo; Primero se crean lo ficheros en el directorio de trabajo de nuestra maquina "se ha tenido que crear antes con git init la carpeta .git en nuestro directorio local", Segundo se incluyen en el indice los ficheros modificados o nuevos con git add .    Tercero se pasan a "git" (local) con git commit que lo que hace es subir los ficheros que se tenian en el indice.
+
+
+con git status nos muestra como están los ficheros:
+	modified que están modificados con respecto al commit anterior
+	untracked que no existen en el commit anterior y se ven con ?? en rojo. quiere decir que no están en el indice.
+	staged que son ficheros nuevos o modificados que se han registrado para que vayan en le proximo commit y aparece con un A en verde
+
+con git status -s nos dan los resultados compatos y muy comodos
+con git log nos muestra el estado de todos los commits creados
+
+
+git diff nos muestra los cambios de los ficheros modified del directorio de trabajo
+		si se le pasa el nombre del fichero nos lo mostrará solo si está en modified.
+
+git diff -cached nos muestra los cambios de los ficheros staged del directorio de trabajo
+		si se le pasa el nombre de un fichero nos lo mostrará solo si está en staged.
+
+git diff nos muestra en verde y con un + delante las que se han añadido y en rojo y con un - las que se han quitado, y en negro las que se han modificado "se han quitado o añadido lineas de codigo".
+
+git log --oneline muestra la historia de los commits
+
+HASTA AQUÍ TODO LO DICHO ES PARA TRABAJAR LOCALMENTE EN NUESTRO ORDENADOR Y NO EN LA NUBE.
+A PARTIR DE AQUÍ SE EXPLICA COMO SE HACE EN LA NUBE.
+
+con git init --bare lo que hace es crear el repositorio de commits
+git push  actialuza remotamente
+
+git clone  crea un clon del repositorio
+git fetch trae una rama del repositorio
+
+para subir todo es git push https://github.com/anplase/Programacion   master
+
+con git remote no muestras los nombre de los repositorios que hay. con -v nos da la url y algunos datos mas.
+git remote add ejemplo añade repositorios https://github.com/anplase/ejemplo
+git remote remove elimina ejemplo repositorios
+git clone https://github.com/anplase/Programacion enejemplo     lo que hace es clonar el repositorio Programacion en la carpeta enejemplo
+
+git push origin master
+git push -q origin master
+
+
+EMPEZAMOS A TENER UNA PAGINA WEB EN GITHUB
+lo primero es crear un repositorio con url anplase\anplase.github.io
+despues se clona danlole a clonar y en la consola se pone git clone url     la url es la que hemos copiado al pinchar en clonar en la web y salia la url que hay que colocar y todo esto lo clona en la carpeta donde estemos ejecutando el git clone url 
+Entramos en la carpeta que nos ha aparecido al clonar y dentro de ella se crean los ficheros que se quieran subir y tener.
+despues git commit -m "descripción del commit"
+despues git push origin master    y una vez que se hace esto ya se pueder ver en la web que están dentro de github
+si colocamos una URL https:\\anplase.github.io podemos acceder a la pagina web que hemos creado porque el repositorio lo habiamos creado con ese nombre, anplase.github.io
+
+Para utilizar una plantilla del sitio web hay que:
+vamos a la web y clonamos la pagina que queramos. es decir copiamos la url
+luego git clone url     dentro de la carpeta donde queramos que se copie
+copiamos todos los archivos y carpetas con cp -R  fuente  destino     el destino tiene que ser un repositorio que ya exista por ejmplo.
+git add
+git commit -m "descripcion"
+git push origin master
+
+y hemos publicado todo.
+para cambiar algo, se hacen estos tres ultimos git (add, commit, push)
+
+vamos a la pagina anplase.github.io   y con ello podemos ver la pagina.
+
+
+
+
+DEL CURSO DE GIT EN CODIGO FACILITO
+
+1  creamos la carpeta de trabajo
+2  git init    dentro de la carpeta de trabajo lo que hace es enlazar la carpeta
+3  git add .   añade
+4  git commit -m "descripcion"
+5  creamos un repositorio nuevo en la web y copiamos el enlace
+6  git remote add origin https://github.com/anplase/Python3.git (por ejemplo)
+7  git remote -v Podemos comprobar que está enlazado
+8  git remote remove origin       se elimina el enlace
+9  git push -u origin master       se suben los commits que se tengan a github
+10 si por casualida nos da problemas porque tenemos cosas ya en el repositorios que no tenemos en nuestro ordenador primero hay que hacer lo siguiente para taernos los cambios a nuestro ordenador primero
+11 git fetch origin     con esto copiamos lo que no tenemos a la rama oculta
+12 git merge origin/master    con esto sa pasa los cambios de la rama oculta a la rama donde estamos.
+13 para cambiar de rama es git logout nombrerama
+14
+
+
+
