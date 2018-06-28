@@ -56,6 +56,44 @@ mostrar_resultado(funci_prueba)
 
 
 
+print()
+#CUANDO NO SE SABE QUE CAMTIDAD DE ARGUMENTOS SE LE PASA A UNA FUNCIÓN
+def suma_argumentos_desconocidos(*args): #se llama args como convección de todo los programadores
+	print(args)
+	# al final convierte args en una tuple
+	print(type(args)) # nos dice el tipo y podemos ver como es tupla
+	result=0
+	for valor in args:
+		result=result+valor
+	return result
+
+
+resultado= suma_argumentos_desconocidos(3, 4, 5)
+print(resultado)
+
+
+
+
+print()
+#de la misma forma que se toma como convección el nuemro de argumentos como *args y nos lo muestra como
+# una tupla, ahora lo hacemos pero lo que nos muestra es un diccionario
+def diccionario_resta(**kwargs):
+	valor=kwargs.get("valor", "no contiene el valor")
+	print(valor)
+
+resultado= diccionario_resta(a="Eduardo", x=2, y=9, z=True)
+print(resultado)
+
+
+
+#   * -> un asterisco es  n valores para nuestra función y se convierten en Tuplas
+#   ** -> dos asteriscos  n valores para nuestra función y se convierte en diccionarios
+
+
+
+
+
+
 
 
 

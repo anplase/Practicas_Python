@@ -87,8 +87,12 @@ DEL CURSO DE GIT EN CODIGO FACILITO
 10 si por casualida nos da problemas porque tenemos cosas ya en el repositorios que no tenemos en nuestro ordenador primero hay que hacer lo siguiente para taernos los cambios a nuestro ordenador primero
 11 git fetch origin     con esto copiamos lo que no tenemos a la rama oculta
 12 git merge origin/master    con esto sa pasa los cambios de la rama oculta a la rama donde estamos.
-13 para cambiar de rama es git logout nombrerama
-14
+13 git branch    nos indica las ramas que hay
+14 git branch nombre    nos crea una rama
+15 git checkout nombre     nos vamos a la rama nombre
+16 si utilizamos git merge master   si estamos en la rama nombre lo que hacemos absorver los commit que hay en master y llevarlos a la rama nombre.
+17 git checkout -b nombre      a la vez que nos cambiamos se crea la rama
+18 git branch -D nombre    lo que hace es eliminar la rama nombre.
 
 
 
