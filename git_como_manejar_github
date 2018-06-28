@@ -77,7 +77,7 @@ DEL CURSO DE GIT EN CODIGO FACILITO
 
 1  creamos la carpeta de trabajo
 2  git init    dentro de la carpeta de trabajo lo que hace es enlazar la carpeta
-3  git add .   añade
+3  git add .   añade    creo que con git add -A lo que se añade es lo que no está ya.
 4  git commit -m "descripcion"
 5  creamos un repositorio nuevo en la web y copiamos el enlace
 6  git remote add origin https://github.com/anplase/Python3.git (por ejemplo)
