@@ -88,7 +88,8 @@ except Exception as ex:	# con as y variable podemos imprimir la variable y saber
 #esta ultima es la generica que casi siempre se puede usar
 finally:
 	print("este bloque siempre se ejecuta falle o no ")
-
+# es normal encontrar en otros codigos meter en el finally el cierra de las bases de datos
+# para que no se queden abiertas
 
 
 
