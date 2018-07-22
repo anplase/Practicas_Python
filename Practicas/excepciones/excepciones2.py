@@ -28,3 +28,27 @@ __status__="Developer"
 
 
 
+#video 23 de exepciones de pildorasinformaticas 
+
+def evaluaEdad(edad):
+
+	if edad<0:
+		raise ZeroDivisionError("No se permiten edades negativas") #esto nos produce un error que luego hay que capturar
+	if edad<20:
+		return "eres muy joven"
+	if edad<40:
+		return "eres joven"
+	if edad<65:
+		return "eres maduro"
+	if edad<100:
+		return "Cuídate..."
+
+try:
+	print(evaluaEdad(-15)) # con lo que esto nos da un error
+# pero de esta forma el error no lo conoce porque no está definido
+except ZeroDivisionError as e:
+	print("El error es", e)
+print("Y el programa termina aquí")
+
+
+

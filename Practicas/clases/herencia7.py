@@ -24,7 +24,7 @@ class Gato:
 		print("El felino está cazando")
 	
 class Jaguar:
-	@property
+	@property #decoramos
 	def garras_retractiles(self):
 		return True
 

@@ -21,6 +21,8 @@ class Lapiz():
 	"""Creamos un objeto llamado Lapiz"""
 	#los atributos esta vez están dentro de un metodo que se llama __init__
 	# es especial, ya que va a ser el que le pase los valores a los atributos en su llamada
+	# y se llama constructor, que es llamado por se los valores iniciales, por eso __init__
+	
 	def __init__(self, color = "Azul", contiene_borrador = False, usa_grafito = True):
 		self.color = color
 		self.contiene_borrador = contiene_borrador

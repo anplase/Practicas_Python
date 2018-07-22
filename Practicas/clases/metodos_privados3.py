@@ -37,7 +37,8 @@ class Usuario2:
 	def __init__(self, username, password, email):
 		self.username = username
 		self.__password = self.__generar_password(password) #el doble guión bajo es para hacer 
-															#un atributo privado
+															#un atributo privado a esto se le llama
+															# encapsulación
 		self.email = email
 
 	def __generar_password(self, password):
